@@ -26,6 +26,10 @@ Seeker is self-propelled. You are now in another
 world.
     </string>
 
+    <string name="ans2goto5">Cut loose from the Maray and dive with the Seeker into the canyon in the ocean floor</string>
+    
+    <string name="ans2goto6">Explore the ledge where the Seeker has come to rest.</string>
+
     <string name="story5">You radio a status report to the Moray and tell
 them that you are going to cast off from the line
 and descend under your own power. Your plan is
@@ -41,6 +45,10 @@ Lantern fish give off a pale, greenish light. To the
 right (starboard) side of the Seeker you see bubbles rising steadily from the floor of the canyon.
     </string>
 
+    <string name="ans5goto8">Investigate the bubbles.</string>
+    
+    <string name="ans5goto9">Investigate the grotto with the round entrance.</string>
+    
     <string name="story6">Your sea suit will protect you from the intense
 pressures of the deep. It is a tight fit and takes you
 some time to put it on. Finally you slip from the
@@ -62,6 +70,10 @@ will destroy the Seeker. Fish of all sizes huddle with
 you in an attempt to escape the monster.
     </string>
 
+    <string name="ans6goto10">Stay hidden close to the Seeker</string>
+
+    <string name="ans6goto12">Try to escape in the hope that rescuers will see you</string>
+
     <string name="story8">Carefully, you maneuver the Seeker between
 the walls of the canyon.
 On the floor of the canyon, you discover a large
@@ -69,6 +81,10 @@ round hole out of which flow the large bubbles.
 The Seeker is equipped with scientific equipment
 to analyze the bubbles. It also has sonar equipment that can measure the depth of any hole.
     </string>
+
+    <string name="ans8goto11">Decide to analyze the bubbles.</string>
+
+    <string name="ans8goto15">Decide to take sonar readings.</string>
 
     <string name="story9">You pilot the Seeker through the rounded entrance to the grotto. Once inside, your searchlight
 picks up what appear to be docks and piers along
@@ -80,6 +96,10 @@ used twice for very short periods before it must be
 recharged aboard the Maray, now more than
 2,000 feet above you on the surface.
     </string>
+
+    <string name="ans9goto16">ans_goto</string>
+
+    <string name="ans9goto14">ans_goto</string>
 
     <string name="story10">The giant squid tosses and turns the Seeker, but
 finally the creature grows tired of its new game and
@@ -99,6 +119,10 @@ squid suddenly returns as if from nowhere. It is
 headed directly at you.
     </string>
 
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
+
     <string name="story11">You squeeze into your sea suit and, outside the
 Seeker, you use special equipment to analyze the
 bubbles. As you work, you clumsily knock against
@@ -116,6 +140,10 @@ you are also very worried about the Seeker\'s loss
 of rising capability. You might also be able to trap
 the bubbles and use them to raise the Seeker.
     </string>
+    
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
 
     <string name="story12">Moving cautiously, you climb up the sides of the
 canyon hoping to reach the ocean floor. You leave
@@ -135,6 +163,11 @@ catch you anyway. You also know that you will get
 the bends from the rapid rise to the surface.
     </string>
 
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
+
+
     <string name="story14">You cruise silently into the grotto. Its roof seems
 to slope upward and you follow the slope. The
 depth finder shows that you are rising quite
@@ -148,6 +181,10 @@ begin to send radio signals at the door hoping to
 make contact on the other side.
     </string>
 
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
+    
     <string name="story15">You maneuver the Seeker next to the hole and
 begin to take sonar readings to determine the
 depth of the hole. To your amazement, the sonar
@@ -164,6 +201,10 @@ the Moray. On the other hand, you are perhaps on
 the verge of one of the world\'s greatest discoveries.
     </string>
 
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
+
     <string name="story16">The beam from the laser light illuminates the
 entire grotto. Far back on the floor of the grotto is a
 submarine! Cautiously, you maneuver the Seeker
@@ -175,6 +216,10 @@ around it as though it is their own special prize.
 Then you notice that the main hatch is free of
 algae!
     </string>
+
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
 
     <string name="story17">With a rush of water, the giant squid attacks you.
 Two 20 foot tentacles with their pulsing suction
@@ -197,6 +242,10 @@ are better and start to worry about diving into the
 abyss again.
     </string>
 
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
+
     <string name="story18">As they begin the rapid hauling, you lose your
 ability to function in the deep. You start to get dizzy
 and your arms and legs feel weak. You lose your
@@ -205,6 +254,10 @@ exhausted. Then you see a dolphin heading toward you. You know that these marvel
 mammals sometimes help people in trouble. Will it
 help you?
     </string>
+
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
 
     <string name="story22">As you begin to drill, the stream of bubbles
 increases.
@@ -219,6 +272,10 @@ now! There is great risk in entering the hole, but it
 could lead to the source of the bubbles and maybe
 to Atlantis.
     </string>
+
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
     
     <string name="story24">You are able to capture the bubbling gases and
 fill the tanks of the Seeker, enough to allow it to
@@ -232,6 +289,10 @@ rails. Could this be a path that leads to the lost city
 of Atlantis? You anchor the Seeker and prepare to
 investigate more closely.
     </string>
+
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
 
     <string name="story27">Deciding to return to the surface, you direct the
 Seeker cautiously back along the side of the canyon in the ocean floor. Without warning, the
@@ -253,7 +314,11 @@ They want you to follow them and you agree.
 But you have another thought. Perhaps you could
 blast your way out of the chamber with the
 Seeker\'s laser cannon.
-</string>
+    </string>
+
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
 
     <string name="story28">The radio transmissions seem to be failing, and
 you grow tired of sending signals through the
@@ -265,6 +330,10 @@ tells you that you are welcome here, but that once
 you enter this place, you may never return to the
 world above. It is up to you to decide.
     </string>
+
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
 
     <string name="story29">The submarine is indeed mysterious. You now
 have on your sea suit and you open the hatch on
@@ -286,7 +355,11 @@ instructions to a secret passageway to the underwater city.
 As you follow directions, you spy an unbelievable underwater craft with several people in it. It
 must be an Atlantean ship, but are the people
 good or evil? Do they know of the secret passageway?
-</string>
+    </string>
+
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
 
     <string name="story33">You can\'t resist the adventure beneath the sea.
 You must go down again, and after several weeks
@@ -303,6 +376,10 @@ lost continent slipped beneath the sea?
 You take pictures and make notes in your special undersea book. Maybe this ancient ship hides
 the secret to Atlantis.
     </string>
+
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
 
     <string name="story34">The dolphin looks at you, and you even imagine
 that he is smiling at you. You grab one of his
@@ -321,6 +398,10 @@ thought keeps haunting you: What if your luck has
 run out?
     </string>
 
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
+
     <string name="story35">You suddenly realize the stream of bubbles is
 powerful enough to raise the Seeker. You guide
 the Seeker into the bubble stream and it heads
@@ -338,6 +419,10 @@ stuck in the clinging seaweed. You are trapped and
 unable to go forward or return to the Seeker.
     </string>
 
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
+
     <string name="story38">You decide to guide the Seeker into the new
 passageway to the bubble source. Suddenly the
 Seeker is swept downward as if pulled by a giant
@@ -353,6 +438,10 @@ If you wish to leave now, we will escort you safely
 to the surface. It is your choice. We do not wish to
 harm you."
     </string>
+
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
 
     <string name="story39">You are led to a room. The floors are a rich
 marble. The walls glow. The ceiling is like being
@@ -382,6 +471,10 @@ don\'t really know. They live in the center of the old
 volcano. If you wish, I can take you there."
     </string>
 
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
+
     <string name="story41">You are greeted by a group of people who look
 like ordinary human beings except that there are
 gill-like slits on their necks. Their bare feet have
@@ -397,6 +490,10 @@ inserted so that you may breathe underwater, or
 you may join the other animals in the zoo.
     </string>
 
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
+
     <string name="story42">Back aboard the Seeker, you radio the Maray
 that you are surfacing to make a plan. While rising
 out of the giant crevice-like canyon, you spot what
@@ -406,6 +503,10 @@ Maray had mentioned the possibilities of finding
 signs of the ancient civilization, such as roads. You
 must investigate.
     </string>
+
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
 
     <string name="story43">You escape being seen by the submarine craft.
 Following the instructions you enter a passageway. At the end of the passageway is an airlock
@@ -431,6 +532,10 @@ lieutenants. These new friends ask for your help.
 Perhaps you can help them escape.
     </string>
 
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
+
     <string name="story44">Quickly you get into the Seeker in an attempt to
 escape the strange submarine. You notice that the
 sub is chasing you so you put on full emergency
@@ -441,6 +546,10 @@ fathoms from the surface all systems on the Seeker
 fail. You are suspended in the water in a helpless
 position. It seems that a mysterious force has disabled you.
     </string>
+
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
 
     <string name="story45">Cautiously you enter the ship\'s cabin. Clay jugs
 called amphorae, once filled with oils and wines, are
@@ -460,6 +569,10 @@ be roughly 100 feet in diameter. The sonar
 readings indicate the hole has no bottom.
     </string>
 
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
+
     <string name="story46">The trip back to the surface is smooth, and
 finally the Seekeris hauled aboard the Maray. You
 climb out and are greeted by the scientists and
@@ -474,6 +587,10 @@ The next morning the wind has died and the sky
 clear. You are now ready to dive again.
     </string>
 
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
+
     <string name="story48">Again the Seeker is lowered over the side of the
 Maray and slips into the ocean. Fish swim by peering cautiously at you in your metal shell. The sunlight fades as you descend into the abyss.
 You are headed for the giant canyon below that
@@ -482,6 +599,10 @@ you switch on the Seeker\'s searchlight. Immediately you spot the round hole tha
 be made by intelligent beings. Perhaps it leads to
 Atlantis.
     </string>
+
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
 
     <string name="story50">You are dizzy from lack of oxygen and fatigue.
 With your knife you slash away at the heavy brown
@@ -493,6 +614,10 @@ crew of the Maray quickly spot you. Within a few
 moments you are safely aboard, surrounded by
 your friends. What a relief to be out of that nightmare world!
     </string>
+
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
 
     <string name="story51">The three people of Atlantis sense your wish to
 return to the surface. Instantly, they produce a
@@ -514,12 +639,20 @@ work. You are tempted to use this money for
 another expedition.
     </string>
 
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
+
     <string name="story53">The worst thing you could do would be to panic.
 You relax and drift with the current which suddenly takes you upward. With your knife, you cut
 through the kelp and are free. What a relief.
 But no sooner do you get out of the kelp, than
 you are caught in the vortex of a giant whirlpool!
     </string>
+
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
 
     <string name="story55">The three people lead you into an enormous
 cavern. In the center of the cavern is a huge,
@@ -542,6 +675,10 @@ up to you. On the other hand, if you do not wish to
 be one of us, you will be held prisoner."
     </string>
 
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
+
     <string name="story56">"I wish to join the Nodoors," you tell your
 guide. He leads you to the outskirts of the city.
 "I must leave you now. Good luck." The
@@ -559,6 +696,10 @@ Atlanteans. They suggest that, as a spy, you could
 pass freely between both groups.
     </string>
 
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
+
     <string name="story57">You decide to remain with the Atlanteans. Their
 approach to life seems ideal. Time is spent in creating things to help life and not to destroy it. You
 believe their leader is speaking the truth when she
@@ -570,6 +711,10 @@ caused the split between the Atlanteans and the
 Nodoors. Yet, in your mind remains the hope of
 escape so that you can go back to your own world.
     </string>
+
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
 
     <string name="story60">It doesn\'t take you long to find the king. One of
 his countless agents leads you to him. He is in a
@@ -588,6 +733,10 @@ and he has survived because he is not afraid to be
 tough. He wants you to be an adviser on his staff.
     </string>
 
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
+
     <string name="story61">The problem is where do they escape to? The
 king is in charge. He rules the world below the sea
 and his spies are everywhere. The only answer is
@@ -603,6 +752,10 @@ actors will be carrying real weapons, but no one
 will suspect them because they are in the play.
 The people like the plan. They ask you to become their leader.
     </string>
+
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
 
     <string name="story64">The best plan is to wait until the Maray locates
 you with sonar equipment. You can\'t signal the
@@ -623,6 +776,10 @@ Seeker. The whale now remains close to the
 Seeker watching and waiting.
     </string>
 
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
+
     <string name="story65">Why not go? Who would believe it? The center
 of the earth! You push the control column forward
 and dive deep. Soon there is no more water, just a
@@ -641,6 +798,10 @@ electrons. What a world! Maybe you are having
 hallucinations.
     </string>
 
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
+
     <string name="story66">You face the fact that it is too dangerous to dive
 into a deep hole that might lead to the center of the
 earth. It is better judgment to return to the surface
@@ -651,6 +812,10 @@ Finally the Seeker breaks through into fresh air
 and sunlight and you wait to be picked up by the
 Maray.
     </string>
+
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
 
     <string name="story67">You insist that you are all right and will dive
 again the next day. The scientists try to convince
@@ -665,11 +830,19 @@ When you reach the bottom, you decide to
 explore the ledge along the deep canyon.
     </string>
 
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
+
     <string name="story69">It is no use. The whirlpool has you in its grip.
 You feel your arms and legs being torn in every
 direction. There is no way out. Round and round
 you go.
     </string>
+
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
 
     <string name="story70">You decide that you can\'t swim out of the
 whirlpool. There is only one thing to do. Dive deep
@@ -682,6 +855,10 @@ You can look up through the center of the
 whirlpool and see the sky more than 2000 feet
 above you. It is a tiny patch of blue.
     </string>
+
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
 
     <string name="story71">Perhaps you are being foolish, but you decide to
 join them. The injection is painless and you feel no
@@ -696,8 +873,12 @@ people seek us out, just like you. We choose carefully."
 You are amazed at what they say. A choice is
 given to you. You can either journey with them
 through time and space to their planet, or you can
-remain in underwater Atlantis as a worker recording information about life on earth.
+remain in underwater Atlantis as a worker recording ans_gotormation about life on earth.
     </string>
+
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
 
     <string name="story72">The only way to prove that you are not crazy is
 to lead another expedition back to Atlantis. You
@@ -714,6 +895,10 @@ arm, but it will not budge. It is frustrating to be so
 close to the secret and yet so far from it.
     </string>
 
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
+
     <string name="story79">When you get a chance and everyone is doing
 other things, you dash for the tunnel exit and make
 it out into the water. No alarms sound. No one
@@ -725,6 +910,10 @@ out. It is too deep. No one could survive the pressure and lack of oxygen. But a
 away at brown seaweed that surrounds you and
 you are just a short way from the surface.
     </string>
+
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
 
     <string name="story81">You do not wish to lead a revolt but the people
 need you. You organize the play, and the king is
@@ -745,6 +934,10 @@ go on with the play.Just then, a squad of the king\'s
 soldiers enter the theater. They are headed for
 you.
     </string>
+
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
     
     <string name="story82">Adviser to a mean king? Not a chance! You tell
 him that you want nothing to do with a tyrant who
@@ -764,6 +957,10 @@ sea from crashing in on them. Everyone works for
 a common purpose. Survival is the goal.
     </string>
 
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
+
     <string name="story88">The electrons whirl about at dizzy speeds and
 you continue until you get to a spot where your
 instruments indicate that there is no time. The
@@ -782,6 +979,10 @@ and are aboard the Seeker. You try to enter their
 thoughts, but they tell you that you have not journeyed far enough yet to be able to become a
 thought-traveler.
     </string>
+
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
 
     <string name="story90">"I will go with you. I want to see other parts of
 the universe."
@@ -810,6 +1011,10 @@ with people like you. You may choose to remain as
 you are or accept transformation."
     </string>
 
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
+
     <string name="story91">You have had enough adventure for now.
 Travel to another planet in a different galaxy
 sounds like more risk than you wish to take. Besides, you can always go later.
@@ -820,6 +1025,10 @@ seriously for several days. When they are through
 talking, they offer you a choice of jobs in Atlantis.
 You may become a farmer or a musician.
     </string>
+
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
 
     <string name="story94">It is never good to use force unless you are
 attacked and must defend yourself. You refuse
@@ -833,6 +1042,10 @@ you. It bathes the Seeker in a gentle light. The
 hatch door opens. Three figures emerge and
 beckon to you to follow them.
     </string>
+
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
 
     <string name="story96">A thought traveler! You realize that people do it
 all the time in day dreams. Of course, you want to
@@ -856,6 +1069,10 @@ the light going through you. You cast no shadow.
 A sense of peace fills you.
     </string>
 
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
+
     <string name="story100">The ocean floor has a small metal hatch on it.
 You pull with all your strength but it will not open.
 You rest for a moment and look through the wall of
@@ -867,6 +1084,10 @@ walk down a corridor that leads to a small room.
 Three people meet you.
     </string>
 
+    <string name="ans_goto">ans_goto</string>
+
+    <string name="ans_goto">ans_goto</string>
+
     <string name="story108">During the night, you are awakened by the
 sound of voices talking quietly. Listening, you
 realize that a group of Nodoors is planning an
@@ -877,16 +1098,11 @@ darkness. They seek light and friendship. It sounds
 simple, but nothing is easy.
     </string>
 
-    <!--
-        <string name="info">Info</string>
-        <string name="info">Info</string>
-        <string name="info">Info</string>
-        <string name="info">Info</string>
-        <string name="info">Info</string>
-        <string name="info">Info</string>
-        <string name="info">Info</string>
-        <string name="info">Info</string>-->
+    <string name="ans_goto">ans_goto</string>
 
+    <string name="ans_goto">ans_goto</string>
+
+    
 
     <string name="end19">You wait for the shark to go away. But then you
 notice other sharks coming to join in the hunt.
@@ -906,7 +1122,7 @@ The lookouts spot you in the water and quickly
 rescue you. Unfortunately, the rapid ascent has
 given you a bad case of the bends. It takes a long
 time to decompress. And when you are finally all
-right, the ship\'s doctor informs you that your
+right, the ship\'s doctor ans_gotorms you that your
 underwater days are over. Someone else will have
 to find Atlantis.
 The End
@@ -1421,7 +1637,7 @@ The End.
 
     <string name="end105">These people lead you to a control room. There
 you meet the commander of an underwater scientific center that is conducting secret research into
-life underneath the sea. They inform you that it
+life underneath the sea. They ans_gotorm you that it
 was a good thing that you did not use your laser
 cannon, because they have anti-laser devices that
 would have blown you and the Seeker to pieces.
@@ -1541,80 +1757,10 @@ prison. The revolt is a success.
 The End.
     </string>
 
-    <!--  <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>
-      <string name="info">Info</string>-->
-
-
-    <string name="info">Info</string>
     <string name="background_image">Background Image</string>
-    <string name="info_btn">info button</string>
+    <string name="ans_goto_btn">ans_goto button</string>
     <string name="top_button">Explore the ledge where the Seeker has come to rest.</string>
     <string name="bottom_button">Cut loose from the Maray and dive with the Seeker into the canyon in the ocean floor</string>
+    <string name="info_button">Info Button</string>
 
 </resources>

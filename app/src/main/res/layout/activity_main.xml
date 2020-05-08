@@ -49,9 +49,9 @@
         android:layout_height="43dp"
         android:layout_marginTop="6dp"
         android:layout_marginEnd="6dp"
-        android:contentDescription="@string/info_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/info_button"
         app:srcCompat="@android:drawable/ic_menu_info_details" />
 
     <Button
