@@ -19,11 +19,19 @@ public class MainActivity extends AppCompatActivity
     Button mTopButton, mBottomButton;
     TextView mStoryTextView;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        AlertDialog.Builder splashScreen = new AlertDialog.Builder(MainActivity.this);
+        splashScreen.setTitle("ADVENTURE INSTRUCTIONS");
+        splashScreen.setMessage("Developer: Rishav Nath Pati" +
+                "\nClick the links below to visit profiles");
+        splashScreen.setCancelable(true);
+        splashScreen.show();
 
         mInfoImageButton = findViewById(R.id.INFO_BUTTON);
         mTopButton=findViewById(R.id.TOP_BUTTON);

@@ -204,7 +204,7 @@ hold on the platform and drift in the water
 exhausted. Then you see a dolphin heading toward you. You know that these marvelous
 mammals sometimes help people in trouble. Will it
 help you?
-</string>
+    </string>
 
     <string name="story22">As you begin to drill, the stream of bubbles
 increases.
@@ -218,7 +218,8 @@ the Seeker to determine the source of the bubbles
 now! There is great risk in entering the hole, but it
 could lead to the source of the bubbles and maybe
 to Atlantis.
-</string>
+    </string>
+    
     <string name="story24">You are able to capture the bubbling gases and
 fill the tanks of the Seeker, enough to allow it to
 rise. Slowly, the Seeker rises out of the canyon,
@@ -229,7 +230,7 @@ the top of the canyon, you see what appears to be
 an old road! Rocks along its side seem to be guard
 rails. Could this be a path that leads to the lost city
 of Atlantis? You anchor the Seeker and prepare to
-investigate more closely
+investigate more closely.
     </string>
 
     <string name="story27">Deciding to return to the surface, you direct the
@@ -300,7 +301,7 @@ find this ship, intact, so far below the surface. What
 brought it here? Was it visiting Atlantis before the
 lost continent slipped beneath the sea?
 You take pictures and make notes in your special undersea book. Maybe this ancient ship hides
-the secret to Atlantis
+the secret to Atlantis.
     </string>
 
     <string name="story34">The dolphin looks at you, and you even imagine
@@ -379,7 +380,7 @@ your guide about them.
 "Oh, we believe they are dangerous, but we
 don\'t really know. They live in the center of the old
 volcano. If you wish, I can take you there."
-</string>
+    </string>
 
     <string name="story41">You are greeted by a group of people who look
 like ordinary human beings except that there are
@@ -522,10 +523,10 @@ you are caught in the vortex of a giant whirlpool!
 
     <string name="story55">The three people lead you into an enormous
 cavern. In the center of the cavern is a huge,
-silver-colored machine. It isshaped like a long tube
+silver-colored machine. It is shaped like a long tube
 with several round panels attached to one end.
 They lead you inside. It is the most advanced
-control room that you have everseen. Computers,
+control room that you have ever seen. Computers,
 sensing devices, recording devices, monitors, and
 a host of dials and panels fill the room. A strangely
 shaped figure with a very large head and totally
@@ -584,7 +585,7 @@ He offers you a chance to join his government.
 He tells you that most people are lazy and selfish
 and deserve to be ruled with power and command. He has been king for almost 1000 years
 and he has survived because he is not afraid to be
-tough. He wants you to be an advisor on his staff.
+tough. He wants you to be an adviser on his staff.
     </string>
 
     <string name="story61">The problem is where do they escape to? The
@@ -619,7 +620,7 @@ Suddenly the whale hits you full force. The
 Seeker is badly damaged. Water begins to trickle
 in through the hatch cover. You must abandon the
 Seeker. The whale now remains close to the
-Seeker watching and waiting
+Seeker watching and waiting.
     </string>
 
     <string name="story65">Why not go? Who would believe it? The center
@@ -743,8 +744,9 @@ what to do. They turn to you and you tell them to
 go on with the play.Just then, a squad of the king\'s
 soldiers enter the theater. They are headed for
 you.
-</string>
-    <string name="story82">Advisor to a mean king? Not a chance! You tell
+    </string>
+    
+    <string name="story82">Adviser to a mean king? Not a chance! You tell
 him that you want nothing to do with a tyrant who
 doesn\'t believe in people. You tell him to his face
 that the people are unhappy and angry. He laughs
@@ -843,7 +845,7 @@ You try, and amazingly you are rapidly rushed
 through time to the day you were born, then to the
 day you made your first deep-sea dive. Your mind
 flies from one time in your life to another. But
-when it comesto the future, you meet a blank wall.
+when it comes to the future, you meet a blank wall.
 You can\'t seem to travel into the future.
 "Why can\'t I travel ahead in time," you ask the
 Atlanteans.
@@ -874,6 +876,7 @@ You join them and listen to the stories of fear and
 darkness. They seek light and friendship. It sounds
 simple, but nothing is easy.
     </string>
+
     <!--
         <string name="info">Info</string>
         <string name="info">Info</string>
@@ -923,8 +926,8 @@ stronger than the Seeker\'s propulsion motors. You
 have passed the point of no return and your journey downward will continue in utter darkness until
 the water pressure is too great for the Seeker. This
 is the final voyage.
-The End
-</string>
+The End.
+    </string>
 
 
     <string name="end26">The only way to get beyond the door is to blast it
@@ -939,7 +942,7 @@ cavern beyond. The water fills the cavern with
 speed and explosive force. You see several people
 scurrying towards escape hatches. IT IS TOO
 LATE! You did the wrong thing.
-The End
+The End.
     </string>
 
     <string name="end31">You cruise through the grotto past the wreck of
@@ -959,7 +962,7 @@ deadly poisonous sea snake strikes from behind
 the forward cabin and bites you in the soft flesh
 between the fingers of your right hand. There is no
 antidote to the deadly poison.
-The End
+The End.
     </string>
 
     <string name="end32">With great sorrow, you decide that it is wisest to
@@ -971,7 +974,7 @@ several major television shows. While on one such
 show, a special news flash announces to the world
 the discovery of Atlantis. You regret your decision,
 but you didn\'t really have a choice. Did you?
-The End
+The End.
     </string>
 
     <string name="end37">The dolphin might help and might not. You
@@ -985,14 +988,15 @@ big-mouthed grouper, a fish which does not
 bother to bite its victims, but simply swallows them
 whole.
 It looks as though you are its next meal.
-The End</string>
+The End.
+    </string>
 
     <string name="end40">The Atlanteans have lived in peace for thousands
 of years. They have no love of warfare. Their
 civilization is technologically very advanced and a
 sensing mechanism tells them that you are about
 to use your laser cannon. They quickly fire a special beam at the Seeker that makes all its functions
-stop. You are now powerlessto escape. They walk
+stop. You are now powerless to escape. They walk
 up calmly to the Seeker and tell you to come with
 them to Atlantis.
 "You are now part of Atlantis. We understand
@@ -1000,7 +1004,7 @@ your fear, but do not be frightened. No harm will
 come to you and your life will be full. Follow us."
 As you walk with them, into a new world, you
 wonder if you will ever see the sky again.
-The End
+The End.
     </string>
 
     <string name="end47">A helicopter is sent to pick you up and return
@@ -1030,7 +1034,7 @@ adventures in the deep, exploring the ocean bottom and getting to know the fish 
 creatures. It is a very exciting life indeed. You like
 it, but you regret that you will never again know
 the world above the sea.
-The End
+The End.
     </string>
 
     <string name="end59">"No, I refuse to have this insane operation. I
@@ -1051,7 +1055,7 @@ Maybe you have made a real mistake. They no
 longer want you to join them in their world and
 way of life. You refused their offer and now you
 are a prisoner in a zoo.
-The End
+The End.
     </string>
 
     <string name="end63">There is one way out, you decide. Leave the
@@ -1068,7 +1072,7 @@ The exploration of Atlantis will have to depend
 on a new diver. Your eyesight has been damaged
 by the strange force that immobilized the Seeker.
 You career as an underwater adventurer is over.
-The End
+The End.
     </string>
 
     <string name="end68">A violent storm is reported heading your way.
@@ -1082,7 +1086,7 @@ overboard. The monitors aboard the Maray are
 damaged by a frightful electric storm discharge.
 You are all alive but there are no funds to replace
 the damaged equipment. The expedition to Atlantis is over.
-The End
+The End.
     </string>
 
     <string name="end73">The idea of being injected with a serum and
@@ -1096,7 +1100,7 @@ tell you that you will have to remain this way for the
 earth equivalent of 23 years and 61 days until the
 effects wear off. Then you will be given a second
 chance.
-The End
+The End.
     </string>
 
     <string name="end74">You argue with yourself for several weeks about
@@ -1107,7 +1111,9 @@ must be protected. You decide to use the money
 you have made to carry on research on space and
 life on planets in other galaxies. Someday perhaps
 you will meet the Atlanteans in space.
-The End</string>
+The End.
+    </string>
+    
     <string name="end75">Escape will be difficult, but you decide that you
 must get away from these people. The best plan is
 to tell them that you want to accept their offer to
@@ -1123,7 +1129,9 @@ Atlanteans, you ask them to allow you to live with
 them. You know that you will never be allowed to
 leave their underwater world, but there is always
 the hope for escape. It could be a good life.
-The End</string>
+The End.
+    </string>
+    
     <string name="end76">"OK, I\'ll do it," you say. "I\'ll join you and spy on
 the Atlanteans for you. Who knows, maybe they
 aren't as bad as you think."
@@ -1137,8 +1145,9 @@ comes to you that the Nodoors are from a different
 planet and are unhappy outcasts. The Atlanteans
 want nothing to do with them. You chose the
 wrong side.
-The End
-</string>
+The End.
+    </string>
+    
     <string name="end77">Maybe you can learn from the Atlanteans how
 they achieve such happiness in their lives. You will
 seek out their history.
@@ -1152,16 +1161,16 @@ rich and dazzling universe, clear and unbounded.
 You have so much to do, helping with sea plants
 and studying their history that you soon forget the
 Seeker.
-The End
+The End.
     </string>
 
-    <string name="end80">An advisor to a king! What a chance. Maybe the
+    <string name="end80">An adviser to a king! What a chance. Maybe the
 king has ruled so long that he is out of touch with
-the people. Perhaps as his advisor you can help
+the people. Perhaps as his adviser you can help
 the people get what they want. You don\'t believe
 that people are lazy and selfish. The king just needs
 a new point of view.
-You are appointed the king\'s special advisor on
+You are appointed the king\'s special adviser on
 problems of research on food and shelter. You
 immediately call general meetings of all the people
 to discuss the food program and the work
@@ -1174,7 +1183,8 @@ work. You listen to their complaints and their
 ideas. Life under the sea is rich and full. The
 people are hard working and good. It was a wise
 decision to remain.
-The End</string>
+The End.
+    </string>
 
     <string name="end85">People ride dolphins, and you have met scuba
 divers who reported they held onto the flukes of
@@ -1192,7 +1202,7 @@ suit and its special air packs keep you afloat. You
 are hungry and thirsty, but unharmed by the time
 the search helicopter spots you bobbing in the
 waves.
-The End
+The End.
     </string>
 
     <string name="end86">It is their world, but you are willing to help them
@@ -1213,7 +1223,8 @@ revolt has succeeded without shedding a drop of
 blood and the people celebrate for days.
 The Atlanteans treat you as if you are one of
 them, and, for the first time, you feel that you are.
-The End</string>
+The End.
+    </string>
 
     <string name="end87">You admit that you just don\'t know what to do.
 The whale is frightening looking and you don\'t
@@ -1305,7 +1316,9 @@ you can see the Moray and the tiny glint of binocular lenses reflecting in the s
 watching the whale. You wave, feeling certain they
 have seen you. It won\'t be long before they come
 to collect you.
-The End</string>
+The End.
+    </string>
+
     <string name="end98">You faint, and when you come to, you are
 floating on the surface of the ocean. There is a
 heavy ocean swell and the sun beats down on you.
@@ -1322,7 +1335,7 @@ gets louder and slowly disappears. The helicopter
 has passed over you. It won\'t return this way. The
 pain in your temple increases. You begin to lose
 consciousness.
-The End
+The End.
     </string>
 
     <string name="end99">The walls of the whirlpool look like solid ridges
@@ -1338,7 +1351,9 @@ stunned by the fall, you quickly gain your senses
 and are picked up by the ship. Of course no one
 believes your story, but then even you think it is
 almost too fantastic to have happened.
-The End</string>
+The End.
+    </string>
+
     <string name="end101">You just can\'t give up your body. It might be all
 right for the Atlanteans to move about as pure
 energy, but you have not reached a point where
@@ -1355,7 +1370,9 @@ direct answer. Then one day you look down at
 yourself and you only see bright, glowing energy.
 With horror you realize you have become one of
 them.
-The End</string>
+The End.
+    </string>
+
     <string name="end102">You are in the Atlantean world; why not become like an Atlantean? Looking down at your
 hands, you see them gradually begin to glow with
 a warm, yellow light. Little by little, the glow travels
@@ -1368,7 +1385,8 @@ melt through them. You don\'t need food or rest.
 You can travel through time, and you can travel
 instantly back to earth in your energy form.
 You feel that this is the way you want to be.
-The End</string>
+The End.
+    </string>
 
     <string name="end103">Farming under the sea is a job that you enjoy.
 Outside Atlantis, there are fields of sea plants that
@@ -1382,7 +1400,9 @@ under the sea is beautiful and it is much easier than
 you had imagined. Danger lurks, though, in the
 form of sting rays, slender sea snakes, and occasional sharks. You have to be on your guard at all
 times.
-The End</string>
+The End.
+    </string>
+
 
     <string name="end104">A musician in the world of Atlantis. Who would
 believe it? You are asked to choose an instrument
@@ -1445,6 +1465,7 @@ weapons and in a flash of brilliant light you and
 your companions are vaporized.
 The End.
     </string>
+
     <string name="end110">Over 1000 years of thought travel later, you are
 called into the main thinking room. You are told
 that you may now return to earth life. You have
@@ -1517,8 +1538,9 @@ quarters. All along the route people join you and
 even the king\'s soldiers begin to join the crowd.
 You and the people are free; the king is put in
 prison. The revolt is a success.
-The End
-</string>
+The End.
+    </string>
+
     <!--  <string name="info">Info</string>
       <string name="info">Info</string>
       <string name="info">Info</string>
