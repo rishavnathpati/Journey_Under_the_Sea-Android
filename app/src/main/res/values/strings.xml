@@ -184,21 +184,7 @@ make contact on the other side.
 
     <string name="ans14goto28">Continue transmitting radio communications through the hatch</string>
 
-    <string name="story15">You maneuver the Seeker next to the hole and
-begin to take sonar readings to determine the
-depth of the hole. To your amazement, the sonar
-readings indicate that the hole is extraordinarily
-deep— it might reach the center of the earth!
-What lies down there? Where are the bubbles
-coming from? Is Atlantis beneath you?
-Then you notice a disturbing reading on your
-instruments; a mild earthquake has occurred. The
-Seeker is not damaged, but the earthquake could
-set up a tsunami wave on the surface causing the
-Moray to leave for safer areas. It might be dangerous not to get back to the surface and leave with
-the Moray. On the other hand, you are perhaps on
-the verge of one of the world\'s greatest discoveries.
-    </string>
+    <string name="story15">"You maneuver the Seeker next to the hole and begin to take sonar readings to determine the depth of the hole. To your amazement, the sonar readings indicate that the hole is extraordinarily deep— it might reach the center of the earth! What lies down there? Where are the bubbles coming from? Is Atlantis beneath you? Then you notice a disturbing reading on your instruments; a mild earthquake has occurred. The Seeker is not damaged, but the earthquake could set up a tsunami wave on the surface causing the Moray to leave for safer areas. It might be dangerous not to get back to the surface and leave with the Moray. On the other hand, you are perhaps on the verge of one of the world\'s greatest discoveries. "</string>
 
     <string name="ans15goto23">Descend into the hole</string>
 
@@ -289,7 +275,7 @@ of Atlantis? You anchor the Seeker and prepare to
 investigate more closely.
     </string>
 
-    <string name="ans24goto6">Continue to 6</string>
+    <string name="ans24goto6">Continue</string>
 
     <string name="story27">Deciding to return to the surface, you direct the
 Seeker cautiously back along the side of the canyon in the ocean floor. Without warning, the
@@ -501,7 +487,7 @@ signs of the ancient civilization, such as roads. You
 must investigate.
     </string>
 
-    <string name="ans42goto6">Goto 6</string>
+    <string name="ans42goto6">Go on investigation</string>
 
     <string name="story43">You escape being seen by the submarine craft.
 Following the instructions you enter a passageway. At the end of the passageway is an airlock
@@ -568,21 +554,7 @@ readings indicate the hole has no bottom.
 
     <string name="ans45goto66">Tt is time to go back up to the surface</string>
 
-    <string name="story46">The trip back to the surface is smooth, and
-finally the Seekeris hauled aboard the Maray. You
-climb out and are greeted by the scientists and
-crew. The Seeker is prepared for the second dive,
-but suddenly the wind rises and the sea kicks up
-into furious waves that crash over the deck of the
-Maray. All hands rush to prepare for hurricane
-force winds. There is no chance for the second
-dive to begin. All day and all night the Maray
-pitches on the stormy sea.
-The next morning the wind has died and the sky
-clear. You are now ready to dive again.
-    </string>
-
-    <string name="ans46goto48">Goto 48</string>
+    <string name="ans46goto48">Get ready for diving</string>
 
     <string name="story48">Again the Seeker is lowered over the side of the
 Maray and slips into the ocean. Fish swim by peering cautiously at you in your metal shell. The sunlight fades as you descend into the abyss.
@@ -593,7 +565,7 @@ be made by intelligent beings. Perhaps it leads to
 Atlantis.
     </string>
 
-    <string name="ans48goto9">Goto 9</string>
+    <string name="ans48goto9">Explore further</string>
 
     <string name="story50">You are dizzy from lack of oxygen and fatigue.
 With your knife you slash away at the heavy brown
@@ -804,7 +776,7 @@ and sunlight and you wait to be picked up by the
 Maray.
     </string>
 
-    <string name="ans66goto32">Goto 32</string>
+    <string name="ans66goto32">Leave the expedition</string>
 
     <string name="story67">You insist that you are all right and will dive
 again the next day. The scientists try to convince
@@ -819,7 +791,7 @@ When you reach the bottom, you decide to
 explore the ledge along the deep canyon.
     </string>
 
-    <string name="ans67goto6">Goto 6</string>
+    <string name="ans67goto6">Ready your suit for the next day</string>
 
     <string name="story69">It is no use. The whirlpool has you in its grip.
 You feel your arms and legs being torn in every
@@ -898,7 +870,7 @@ away at brown seaweed that surrounds you and
 you are just a short way from the surface.
     </string>
 
-    <string name="ans79goto50">Goto 50</string>
+    <string name="ans79goto50">Continue cutting through the seaweed</string>
 
     <string name="story81">You do not wish to lead a revolt but the people
 need you. You organize the play, and the king is
@@ -966,8 +938,6 @@ thought-traveler.
     </string>
 
     <string name="ans88goto95">You try to turn back from this strange world</string>
-
-    <string name="ans88goto96">You decide to travel in thought-time-space</string>
 
     <string name="story90">"I will go with you. I want to see other parts of
 the universe."
@@ -1056,7 +1026,7 @@ A sense of peace fills you.
 
     <string name="ans96goto110">Decide to drop out of thought travel and return to earth life</string>
 
-    <string name="ans96gotoEnd">The end</string>
+    <string name="ans96gotoEnd">The End</string>
 
     <string name="story100">The ocean floor has a small metal hatch on it.
 You pull with all your strength but it will not open.
@@ -1069,7 +1039,7 @@ walk down a corridor that leads to a small room.
 Three people meet you.
     </string>
 
-    <string name="ans110goto55">Goto 55</string>
+    <string name="ans100goto55">Continue with them</string>
 
 
     <string name="end19">You wait for the shark to go away. But then you
@@ -1410,17 +1380,6 @@ them, and, for the first time, you feel that you are.
 The End.
     </string>
 
-    <string name="end87">You admit that you just don\'t know what to do.
-The whale is frightening looking and you don\'t
-have any escape plans. So you wait and watch and
-listen.
-After what seems a long time, but is probably
-just a few minutes, the mysterious submarine returns, attaches a cable to the Seeker, and pulls you
-up to the surface. Then the submarine vanishes
-under the waves leaving you to wait for the Maray.
-The End.
-    </string>
-
     <string name="end89">No, you will not dive down toward the center of
 the earth. Once through the thin outer layer of the
 earth, you know that the regions beneath change
@@ -1627,29 +1586,6 @@ There is no escape.
 The End.
     </string>
 
-    <string name="end107">You argue with yourself for weeks. Then you
-decide to go back to Atlantis. You are in such a
-hurry to return that you hire a small, fast hydrofoil
-craft to take you to the spot in the ocean where
-Atlantis is. Once reaching the spot, you intend to
-make a dive with just scuba gear! You know a
-2000 foot dive is impossible. But you don\'t care;
-you feel you must make the attempt.
-A storm rips the sea for six days and when it
-clears you prepare to dive. Just as you slip into the
-water, you look up into the sky and high above the
-clouds you see the sparkling city of Atlantis. No
-dive is necessary.
-The End.
-    </string>
-
-    <string name="end109">Suddenly the door bursts open. Three guards
-armed with special weapons rush in. They fire the
-weapons and in a flash of brilliant light you and
-your companions are vaporized.
-The End.
-    </string>
-
     <string name="end110">Over 1000 years of thought travel later, you are
 called into the main thinking room. You are told
 that you may now return to earth life. You have
@@ -1726,13 +1662,10 @@ The End.
     </string>
 
     <string name="background_image">Background Image</string>
-    <string name="ans_goto_btn">ans_goto button</string>
-    <string name="top_button">Explore the ledge where the Seeker has come to rest.</string>
-    <string name="bottom_button">Cut loose from the Maray and dive with the Seeker into the canyon in the ocean floor</string>
     <string name="info_button">Info Button</string>
     <string name="image_view">IMAGE</string>
-    <string name="text_image">TEXT/IMAGE</string>
     <string name="exit">EXIT</string>
-    <string name="cont">Continue</string>
+    <string name="dont_like_ending">Click if you dont like this ending</string>
+    <string name="ans88goto96">Travel in thought-time-space</string>
 
 </resources>
