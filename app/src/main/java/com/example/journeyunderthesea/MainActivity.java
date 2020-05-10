@@ -19,19 +19,52 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity
-{
+public class MainActivity extends AppCompatActivity {
     private ImageView mBackgroundImageView;
     private TextView mStoryTextView;
     private ImageButton mInfoImageButton;
     private Button mTopButton;
     private Button mBottomButton;
 
+    /*@Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        if (hasFocus) {
+            hideSystemUI();
+        }
+    }
+
+    private void hideSystemUI() {
+        // Enables regular immersive mode.
+        // For "lean back" mode, remove SYSTEM_UI_FLAG_IMMERSIVE.
+        // Or for "sticky immersive," replace it with SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+        View decorView = getWindow().getDecorView();
+        decorView.setSystemUiVisibility(
+                View.SYSTEM_UI_FLAG_IMMERSIVE
+                        // Set the content to appear under the system bars so that the
+                        // content doesn't resize when the system bars hide and show.
+                        | View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                        | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                        | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                        // Hide the nav bar and status bar
+                        | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                        | View.SYSTEM_UI_FLAG_FULLSCREEN);
+    }
+
+    // Shows the system bars by removing all the flags
+// except for the ones that make the content appear under the system bars.
+    private void showSystemUI() {
+        View decorView = getWindow().getDecorView();
+        decorView.setSystemUiVisibility(
+                View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                        | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                        | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
+    }*/
+
 
     @SuppressLint("SourceLockedOrientationActivity")
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -55,34 +88,27 @@ public class MainActivity extends AppCompatActivity
                 "After making a choice follow the instructions to see what happens next.\n\n" +
                 "REMEMBER you cannot go back! Think carefully before you make a move! \n\n" +
                 "One mistake can be your last move or it may lead you to fame and fortune.\n\n" +
-                "Click on th\n\n" +
+                "Click on the Image button at the top to view the sketch behind it\n\n" +
                 "\nClick START below to begin the adventure");
         splashScreen.setCancelable(false);
-        splashScreen.setPositiveButton("START", new DialogInterface.OnClickListener()
-        {
+        splashScreen.setPositiveButton("START", new DialogInterface.OnClickListener() {
             @Override
-            public void onClick(DialogInterface dialog, int which)
-            {
+            public void onClick(DialogInterface dialog, int which) {
                 page2();
             }
         });
         splashScreen.show();
 
         Window window = getWindow();
-        //noinspection deprecation
-        window.setStatusBarColor(getResources().getColor(R.color.colorAccent));
+        window.setStatusBarColor(R.color.colorAccent);
 
-        switchView.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener()
-        {
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked)
-            {
-                if (isChecked)
-                {
+        switchView.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
                     mBackgroundImageView.setImageAlpha(255);
                     mStoryTextView.setVisibility(View.INVISIBLE);
                     mInfoImageButton.setVisibility(View.INVISIBLE);
-                } else
-                {
+                } else {
                     mBackgroundImageView.setImageAlpha(70);
                     mStoryTextView.setVisibility(View.VISIBLE);
                     mInfoImageButton.setVisibility(View.VISIBLE);
@@ -90,56 +116,45 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        mInfoImageButton.setOnClickListener(new View.OnClickListener()
-        {
+        mInfoImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view)
-            {
+            public void onClick(View view) {
                 AlertDialog.Builder devInfo = new AlertDialog.Builder(MainActivity.this);
                 devInfo.setTitle("Dev Information");
                 devInfo.setMessage("Developer: Rishav Nath Pati" +
                         "\nClick the links below to visit profiles");
                 devInfo.setCancelable(true);
-                devInfo.setNeutralButton("Facebook", new DialogInterface.OnClickListener()
-                {
+                devInfo.setNeutralButton("Facebook", new DialogInterface.OnClickListener() {
                     @Override
-                    public void onClick(DialogInterface dialogInterface, int i)
-                    {
+                    public void onClick(DialogInterface dialogInterface, int i) {
                         goToUrl("https://www.facebook.com/rishav.pati.1");
                     }
                 });
-                devInfo.setPositiveButton("Github", new DialogInterface.OnClickListener()
-                {
+                devInfo.setPositiveButton("Github", new DialogInterface.OnClickListener() {
                     @Override
-                    public void onClick(DialogInterface dialogInterface, int i)
-                    {
+                    public void onClick(DialogInterface dialogInterface, int i) {
                         goToUrl("https://github.com/rishavnathpati");
                     }
                 });
-                devInfo.setNegativeButton("LinkedIn", new DialogInterface.OnClickListener()
-                {
+                devInfo.setNegativeButton("LinkedIn", new DialogInterface.OnClickListener() {
                     @Override
-                    public void onClick(DialogInterface dialogInterface, int i)
-                    {
+                    public void onClick(DialogInterface dialogInterface, int i) {
                         goToUrl("https://www.linkedin.com/in/rishav-nath-p-67223bb9/");
                     }
                 });
                 devInfo.show();
             }
 
-            private void goToUrl(String url)
-            {
+            private void goToUrl(String url) {
                 Uri uriUrl = Uri.parse(url);
                 Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
                 startActivity(launchBrowser);
             }
         });
 
-        mTopButton.setOnClickListener(new View.OnClickListener()
-        {
+        mTopButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
-            {
+            public void onClick(View v) {
                 Log.d("Clicked", "Top Clicked");
                 if (mTopButton.getText() == getString(R.string.ans2goto6))
                     page6();
@@ -249,11 +264,9 @@ public class MainActivity extends AppCompatActivity
         });
 
 
-        mBottomButton.setOnClickListener(new View.OnClickListener()
-        {
+        mBottomButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
-            {
+            public void onClick(View v) {
                 Log.d("Clicked", "Bottom Clicked");
                 if (mBottomButton.getText() == getString(R.string.ans2goto5))
                     page5();
@@ -372,8 +385,7 @@ public class MainActivity extends AppCompatActivity
         });
     }
 
-    private void page2()
-    {
+    private void page2() {
         Log.d("Reached", "Page 2");
         mStoryTextView.setText(R.string.story2);
         mTopButton.setText(R.string.ans2goto6);
@@ -383,8 +395,7 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    private void page5()
-    {
+    private void page5() {
         Log.d("Reached", "Page 5");
         mStoryTextView.setText(R.string.story5);
         mTopButton.setText(R.string.ans5goto8);
@@ -394,8 +405,7 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    private void page6()
-    {
+    private void page6() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.story6);
         mTopButton.setText(R.string.ans6goto10);
@@ -404,8 +414,7 @@ public class MainActivity extends AppCompatActivity
         mTopButton.setVisibility(View.VISIBLE);
     }
 
-    private void page8()
-    {
+    private void page8() {
         Log.d("Reached", "Page 8");
         mStoryTextView.setText(R.string.story8);
         mTopButton.setText(R.string.ans8goto11);
@@ -414,8 +423,7 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    private void page9()
-    {
+    private void page9() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.story9);
         mTopButton.setText(R.string.ans9goto16);
@@ -423,8 +431,7 @@ public class MainActivity extends AppCompatActivity
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page10()
-    {
+    private void page10() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.story10);
         mTopButton.setText(R.string.ans10goto17);
@@ -432,8 +439,7 @@ public class MainActivity extends AppCompatActivity
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page11()
-    {
+    private void page11() {
         Log.d("Reached", "Page 11");
         mStoryTextView.setText(R.string.story11);
         mTopButton.setText(R.string.ans11goto24);
@@ -441,8 +447,7 @@ public class MainActivity extends AppCompatActivity
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page12()
-    {
+    private void page12() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.story12);
         mTopButton.setText(R.string.ans12goto21);
@@ -452,8 +457,7 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    private void page14()
-    {
+    private void page14() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.story14);
         mTopButton.setText(R.string.ans14goto26);
@@ -463,8 +467,7 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    private void page15()
-    {
+    private void page15() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.story15);
         mTopButton.setText(R.string.ans15goto23);
@@ -472,8 +475,7 @@ public class MainActivity extends AppCompatActivity
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page16()
-    {
+    private void page16() {
         Log.d("Reached", "Page 16");
         mStoryTextView.setText(R.string.story16);
         mTopButton.setText(R.string.ans16goto29);
@@ -482,8 +484,7 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    private void page17()
-    {
+    private void page17() {
         Log.d("Reached", "Page 17");
         mStoryTextView.setText(R.string.story17);
         mTopButton.setText(R.string.ans17goto32);
@@ -491,8 +492,7 @@ public class MainActivity extends AppCompatActivity
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page18()
-    {
+    private void page18() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.story18);
         mTopButton.setText(R.string.ans18goto34);
@@ -501,8 +501,7 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    private void page19()
-    {
+    private void page19() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.end19);
         mTopButton.setVisibility(View.INVISIBLE);
@@ -510,8 +509,7 @@ public class MainActivity extends AppCompatActivity
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page21()
-    {
+    private void page21() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.end21);
         mTopButton.setVisibility(View.INVISIBLE);
@@ -521,8 +519,7 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    private void page22()
-    {
+    private void page22() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.story22);
         mTopButton.setText(R.string.ans22goto38);
@@ -530,8 +527,7 @@ public class MainActivity extends AppCompatActivity
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page23()
-    {
+    private void page23() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.end23);
         mTopButton.setVisibility(View.INVISIBLE);
@@ -540,8 +536,7 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    private void page24()
-    {
+    private void page24() {
         Log.d("Reached", "Page 24");
         mStoryTextView.setText(R.string.story24);
         mTopButton.setVisibility(View.INVISIBLE);
@@ -549,8 +544,7 @@ public class MainActivity extends AppCompatActivity
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page26()
-    {
+    private void page26() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.end26);
         mTopButton.setVisibility(View.INVISIBLE);
@@ -560,8 +554,7 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    private void page27()
-    {
+    private void page27() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.story27);
         mTopButton.setText(R.string.ans27goto39);
@@ -569,8 +562,7 @@ public class MainActivity extends AppCompatActivity
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page28()
-    {
+    private void page28() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.story28);
         mTopButton.setText(R.string.ans28goto41);
@@ -578,8 +570,7 @@ public class MainActivity extends AppCompatActivity
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page29()
-    {
+    private void page29() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.story29);
         mTopButton.setText(R.string.ans29goto43);
@@ -587,8 +578,7 @@ public class MainActivity extends AppCompatActivity
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page31()
-    {
+    private void page31() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.end31);
         mTopButton.setVisibility(View.INVISIBLE);
@@ -598,8 +588,7 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    private void page32()
-    {
+    private void page32() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.end32);
         mTopButton.setVisibility(View.INVISIBLE);
@@ -607,8 +596,7 @@ public class MainActivity extends AppCompatActivity
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page33()
-    {
+    private void page33() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.story33);
         mTopButton.setText(R.string.ans33goto45);
@@ -616,8 +604,7 @@ public class MainActivity extends AppCompatActivity
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page34()
-    {
+    private void page34() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.story34);
         mTopButton.setText(R.string.ans34goto48);
@@ -625,8 +612,7 @@ public class MainActivity extends AppCompatActivity
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page35()
-    {
+    private void page35() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.story35);
         mTopButton.setText(R.string.ans35goto50);
@@ -634,8 +620,7 @@ public class MainActivity extends AppCompatActivity
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page37()
-    {
+    private void page37() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.end37);
         mTopButton.setVisibility(View.INVISIBLE);
@@ -645,8 +630,7 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    private void page38()
-    {
+    private void page38() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.story38);
         mTopButton.setText(R.string.ans38goto55);
@@ -654,8 +638,7 @@ public class MainActivity extends AppCompatActivity
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page39()
-    {
+    private void page39() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.story39);
         mTopButton.setText(R.string.ans39goto56);
@@ -663,8 +646,7 @@ public class MainActivity extends AppCompatActivity
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page40()
-    {
+    private void page40() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.end40);
         mTopButton.setVisibility(View.INVISIBLE);
@@ -673,8 +655,7 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    private void page41()
-    {
+    private void page41() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.story41);
         mTopButton.setText(R.string.ans41goto58);
@@ -683,8 +664,7 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    private void page42()
-    {
+    private void page42() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.story42);
         mTopButton.setVisibility(View.INVISIBLE);
@@ -692,8 +672,7 @@ public class MainActivity extends AppCompatActivity
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page43()
-    {
+    private void page43() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.story43);
         mTopButton.setText(R.string.ans43goto60);
@@ -701,8 +680,7 @@ public class MainActivity extends AppCompatActivity
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page44()
-    {
+    private void page44() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.story44);
         mTopButton.setText(R.string.ans44goto64);
@@ -712,8 +690,7 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    private void page45()
-    {
+    private void page45() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.story45);
         mTopButton.setText(R.string.ans45goto65);
@@ -721,8 +698,7 @@ public class MainActivity extends AppCompatActivity
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page46()
-    {
+    private void page46() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.story41);
         mTopButton.setVisibility(View.INVISIBLE);
@@ -731,8 +707,7 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    private void page47()
-    {
+    private void page47() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.end47);
         mTopButton.setVisibility(View.INVISIBLE);
@@ -741,8 +716,7 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    private void page48()
-    {
+    private void page48() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.story48);
         mTopButton.setVisibility(View.INVISIBLE);
@@ -752,8 +726,7 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    private void page50()
-    {
+    private void page50() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.story50);
         mTopButton.setText(R.string.ans50goto67);
@@ -762,8 +735,7 @@ public class MainActivity extends AppCompatActivity
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page51()
-    {
+    private void page51() {
         Log.d("Reached", "Page 51");
         mStoryTextView.setText(R.string.story51);
         mTopButton.setText(R.string.ans51goto72);
@@ -771,8 +743,7 @@ public class MainActivity extends AppCompatActivity
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page53()
-    {
+    private void page53() {
         Log.d("Reached", "Page 53");
         mStoryTextView.setText(R.string.story53);
         mTopButton.setText(R.string.ans53goto69);
@@ -781,8 +752,7 @@ public class MainActivity extends AppCompatActivity
         mBackgroundImageView.setVisibility(View.VISIBLE);
     }
 
-    private void page55()
-    {
+    private void page55() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.story55);
         mTopButton.setText(R.string.ans55goto71);
@@ -793,8 +763,7 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    private void page56()
-    {
+    private void page56() {
         Log.d("Reached", "Page 56");
         mStoryTextView.setText(R.string.story56);
         mTopButton.setText(R.string.ans56goto75);
@@ -802,24 +771,21 @@ public class MainActivity extends AppCompatActivity
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page57()
-    {
+    private void page57() {
         mStoryTextView.setText(R.string.story57);
         mTopButton.setText(R.string.ans57goto77);
         mBottomButton.setText(R.string.ans57goto79);
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page58()
-    {
+    private void page58() {
         mStoryTextView.setText(R.string.end58);
         mTopButton.setVisibility(View.INVISIBLE);
         mBottomButton.setText(R.string.exit);
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page59()
-    {
+    private void page59() {
         mStoryTextView.setText(R.string.end59);
         mTopButton.setVisibility(View.INVISIBLE);
         mBottomButton.setText(R.string.exit);
@@ -828,8 +794,7 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    private void page60()
-    {
+    private void page60() {
         Log.d("Reached", "Page 60");
         mStoryTextView.setText(R.string.story60);
         mTopButton.setText(R.string.ans60goto80);
@@ -837,8 +802,7 @@ public class MainActivity extends AppCompatActivity
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page61()
-    {
+    private void page61() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.story61);
         mTopButton.setText(R.string.ans61goto81);
@@ -846,8 +810,7 @@ public class MainActivity extends AppCompatActivity
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page63()
-    {
+    private void page63() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.end63);
         mTopButton.setVisibility(View.INVISIBLE);
@@ -857,8 +820,7 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    private void page64()
-    {
+    private void page64() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.story64);
         mTopButton.setText(R.string.ans64goto63);
@@ -866,16 +828,14 @@ public class MainActivity extends AppCompatActivity
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page65()
-    {
+    private void page65() {
         mStoryTextView.setText(R.string.story65);
         mTopButton.setText(R.string.ans65goto88);
         mBottomButton.setText(R.string.ans65goto89);
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page66()
-    {
+    private void page66() {
         mStoryTextView.setText(R.string.story66);
         mTopButton.setVisibility(View.INVISIBLE);
         mBottomButton.setText(R.string.ans66goto32);
@@ -884,8 +844,7 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    private void page67()
-    {
+    private void page67() {
         Log.d("Reached", "Page 6");
         mStoryTextView.setText(R.string.story67);
         mTopButton.setVisibility(View.INVISIBLE);
@@ -893,48 +852,42 @@ public class MainActivity extends AppCompatActivity
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page68()
-    {
+    private void page68() {
         mStoryTextView.setText(R.string.end68);
         mTopButton.setVisibility(View.INVISIBLE);
         mBottomButton.setText(R.string.exit);
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page69()
-    {
+    private void page69() {
         mStoryTextView.setText(R.string.story69);
         mTopButton.setText(R.string.ans69goto97);
         mBottomButton.setText(R.string.ans69goto98);
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page70()
-    {
+    private void page70() {
         mStoryTextView.setText(R.string.story70);
         mTopButton.setText(R.string.ans70goto99);
         mBottomButton.setText(R.string.ans70goto100);
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page71()
-    {
+    private void page71() {
         mStoryTextView.setText(R.string.story71);
         mTopButton.setText(R.string.ans71goto90);
         mBottomButton.setText(R.string.ans71goto91);
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page72()
-    {
+    private void page72() {
         mStoryTextView.setText(R.string.story72);
         mTopButton.setText(R.string.ans72goto93);
         mBottomButton.setText(R.string.ans72goto94);
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page73()
-    {
+    private void page73() {
         mStoryTextView.setText(R.string.end73);
         mTopButton.setVisibility(View.INVISIBLE);
         mBottomButton.setText(R.string.exit);
@@ -943,264 +896,231 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    private void page74()
-    {
+    private void page74() {
         mStoryTextView.setText(R.string.end74);
         mTopButton.setVisibility(View.INVISIBLE);
         mBottomButton.setText(R.string.exit);
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page75()
-    {
+    private void page75() {
         mStoryTextView.setText(R.string.end75);
         mTopButton.setVisibility(View.INVISIBLE);
         mBottomButton.setText(R.string.exit);
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page76()
-    {
+    private void page76() {
         mStoryTextView.setText(R.string.end76);
         mTopButton.setText(R.string.dont_like_ending);
         mBottomButton.setText(R.string.exit);
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page77()
-    {
+    private void page77() {
         mStoryTextView.setText(R.string.end77);
         mTopButton.setVisibility(View.INVISIBLE);
         mBottomButton.setText(R.string.exit);
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page79()
-    {
+    private void page79() {
         mStoryTextView.setText(R.string.story79);
         mTopButton.setVisibility(View.INVISIBLE);
         mBottomButton.setText(R.string.ans79goto50);
         mBackgroundImageView.setImageResource(R.drawable.image79);
     }
 
-    private void page80()
-    {
+    private void page80() {
         mStoryTextView.setText(R.string.end80);
         mTopButton.setVisibility(View.INVISIBLE);
         mBottomButton.setText(R.string.exit);
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page81()
-    {
+    private void page81() {
         mStoryTextView.setText(R.string.story81);
         mTopButton.setText(R.string.ans81goto116);
         mBottomButton.setText(R.string.ans81goto117);
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page82()
-    {
+    private void page82() {
         mStoryTextView.setText(R.string.story82);
         mTopButton.setText(R.string.ans82goto112);
         mBottomButton.setText(R.string.ans82goto114);
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page85()
-    {
+    private void page85() {
         mStoryTextView.setText(R.string.end85);
         mTopButton.setVisibility(View.INVISIBLE);
         mBottomButton.setText(R.string.exit);
         mBackgroundImageView.setImageResource(R.drawable.image85);
     }
 
-    private void page86()
-    {
+    private void page86() {
         mStoryTextView.setText(R.string.end86);
         mTopButton.setVisibility(View.INVISIBLE);
         mBottomButton.setText(R.string.exit);
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page88()
-    {
+    private void page88() {
         mStoryTextView.setText(R.string.story88);
         mTopButton.setText(R.string.ans88goto95);
         mBottomButton.setText(R.string.ans88goto96);
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page89()
-    {
+    private void page89() {
         mStoryTextView.setText(R.string.end89);
         mTopButton.setVisibility(View.INVISIBLE);
         mBottomButton.setText(R.string.exit);
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page90()
-    {
+    private void page90() {
         mStoryTextView.setText(R.string.story90);
         mTopButton.setText(R.string.ans90goto101);
         mBottomButton.setText(R.string.ans90goto102);
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page91()
-    {
+    private void page91() {
         mStoryTextView.setText(R.string.story91);
         mTopButton.setText(R.string.ans91goto103);
         mBottomButton.setText(R.string.ans91goto104);
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page93()
-    {
+    private void page93() {
         mStoryTextView.setText(R.string.end93);
         mTopButton.setVisibility(View.INVISIBLE);
         mBottomButton.setText(R.string.exit);
         mBackgroundImageView.setImageResource(R.drawable.image92);
     }
 
-    private void page94()
-    {
+    private void page94() {
         mStoryTextView.setText(R.string.story94);
         mTopButton.setText(R.string.ans94goto105);
         mBottomButton.setText(R.string.ans94goto106);
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page95()
-    {
+    private void page95() {
         mStoryTextView.setText(R.string.end95);
         mTopButton.setVisibility(View.INVISIBLE);
         mBottomButton.setText(R.string.exit);
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page96()
-    {
+    private void page96() {
         mStoryTextView.setText(R.string.story96);
         mTopButton.setText(R.string.ans96goto110);
         mBottomButton.setText(R.string.ans96gotoEnd);
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page97()
-    {
+    private void page97() {
         mStoryTextView.setText(R.string.end97);
         mTopButton.setVisibility(View.INVISIBLE);
         mBottomButton.setText(R.string.exit);
         mBackgroundImageView.setImageResource(R.drawable.image97);
     }
 
-    private void page98()
-    {
+    private void page98() {
         mStoryTextView.setText(R.string.end98);
         mTopButton.setVisibility(View.INVISIBLE);
         mBottomButton.setText(R.string.exit);
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page99()
-    {
+    private void page99() {
         mStoryTextView.setText(R.string.end99);
         mTopButton.setVisibility(View.INVISIBLE);
         mBottomButton.setText(R.string.exit);
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page100()
-    {
+    private void page100() {
         mStoryTextView.setText(R.string.story100);
         mTopButton.setVisibility(View.INVISIBLE);
         mBottomButton.setText(R.string.ans100goto55);
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page101()
-    {
+    private void page101() {
         mStoryTextView.setText(R.string.end101);
         mTopButton.setVisibility(View.INVISIBLE);
         mBottomButton.setText(R.string.exit);
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page102()
-    {
+    private void page102() {
         mStoryTextView.setText(R.string.end102);
         mTopButton.setVisibility(View.INVISIBLE);
         mBottomButton.setText(R.string.exit);
         mBackgroundImageView.setImageResource(R.drawable.image102);
     }
 
-    private void page103()
-    {
+    private void page103() {
         mStoryTextView.setText(R.string.end103);
         mTopButton.setVisibility(View.INVISIBLE);
         mBottomButton.setText(R.string.exit);
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page104()
-    {
+    private void page104() {
         mStoryTextView.setText(R.string.end104);
         mTopButton.setVisibility(View.INVISIBLE);
         mBottomButton.setText(R.string.exit);
         mBackgroundImageView.setImageResource(R.drawable.image0);
     }
 
-    private void page105()
-    {
+    private void page105() {
         mStoryTextView.setText(R.string.end105);
         mTopButton.setVisibility(View.INVISIBLE);
         mBottomButton.setText(R.string.exit);
         mBackgroundImageView.setImageResource(R.drawable.image105);
     }
 
-    private void page106()
-    {
+    private void page106() {
         mStoryTextView.setText(R.string.end106);
         mTopButton.setVisibility(View.INVISIBLE);
         mBottomButton.setText(R.string.exit);
         mBackgroundImageView.setImageResource(R.drawable.image106);
     }
 
-    private void page110()
-    {
+    private void page110() {
         mStoryTextView.setText(R.string.end110);
         mTopButton.setVisibility(View.INVISIBLE);
         mBottomButton.setText(R.string.exit);
         mBackgroundImageView.setImageResource(R.drawable.image110);
     }
 
-    private void page112()
-    {
+    private void page112() {
         mStoryTextView.setText(R.string.end112);
         mTopButton.setVisibility(View.INVISIBLE);
         mBottomButton.setText(R.string.exit);
         mBackgroundImageView.setImageResource(R.drawable.image112);
     }
 
-    private void page114()
-    {
+    private void page114() {
         mStoryTextView.setText(R.string.end114);
         mTopButton.setVisibility(View.INVISIBLE);
         mBottomButton.setText(R.string.exit);
         mBackgroundImageView.setImageResource(R.drawable.image114);
     }
 
-    private void page116()
-    {
+    private void page116() {
         mStoryTextView.setText(R.string.end116);
         mTopButton.setVisibility(View.INVISIBLE);
         mBottomButton.setText(R.string.exit);
         mBackgroundImageView.setImageResource(R.drawable.image116);
     }
 
-    private void page117()
-    {
+    private void page117() {
         mStoryTextView.setText(R.string.end117);
         mTopButton.setVisibility(View.INVISIBLE);
         mBottomButton.setText(R.string.exit);

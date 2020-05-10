@@ -10,24 +10,29 @@
         android:id="@+id/BACKGROUND_IMAGEVIEW"
         android:layout_width="0dp"
         android:layout_height="684dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
         android:contentDescription="@string/background_image"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/STORY_TEXTVIEW"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/image2" />
 
     <TextView
         android:id="@+id/STORY_TEXTVIEW"
-        android:layout_width="402dp"
+        android:layout_width="0dp"
         android:layout_height="495dp"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp"
 
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="30dp"
         android:gravity="center_horizontal|center_vertical"
         android:text="@string/story2"
         android:textColor="#000000"
+
         android:textSize="18sp"
         android:textStyle="bold"
-
         app:autoSizeMaxTextSize="35sp"
         app:autoSizeMinTextSize="16sp"
         app:autoSizeStepGranularity="1sp"
@@ -56,16 +61,18 @@
     <Button
         android:id="@+id/TOP_BUTTON"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="53dp"
 
-        android:layout_marginBottom="73dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="72dp"
+
         android:background="@drawable/round_button_red"
         android:text="@string/ans2goto6"
-
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -73,10 +80,12 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
 
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
         android:layout_marginBottom="16dp"
+
         android:background="@drawable/round_button_blue"
         android:text="@string/ans2goto5"
-
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
